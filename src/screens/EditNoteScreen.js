@@ -26,7 +26,7 @@ function EditNoteScreen({route, navigation}) {
                 placeholder='Título'
                 placeholderTextColor='white'
             />
-            <View style={{ marginVertical: 8}} />
+            <View/>
             <TextInput 
                 style={styles.input}
                 onChangeText={(value) => setBody(value)}
@@ -34,9 +34,9 @@ function EditNoteScreen({route, navigation}) {
                 placeholder='Corpo'
                 placeholderTextColor='white'
             />
-            <View style={{ marginVertical: 8}} />
+            <View/>
             <Pressable style={styles.button} onPress={() => EditNote(noteKey)}>
-                <Text style={styles.text}>Editar nota</Text>
+                <Text style={styles.text}>Editar</Text>
             </Pressable>
         </View>
     )
